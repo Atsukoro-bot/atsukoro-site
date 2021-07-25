@@ -19,3 +19,25 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-dropdown ::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--switch-hover-color)
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--switch-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--switch-color);
+  opacity: 0.8;
+}
