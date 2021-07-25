@@ -10,7 +10,7 @@ import wave from "../public/images/wave.png"
 export default function Home() {
   return (
     <>
-      <Image src={wave} alt={"wave"} layout={"fill"}/>
+      <div className={styles.wave}/>
       <div className={styles.container}>
         <Head>
           <title>Atsukoro</title>
@@ -21,6 +21,9 @@ export default function Home() {
           <div className={styles.head}>
             <h1>Atsukoro</h1>
             <h2>Best Anime bot</h2>
+            <div className={styles.buttons}>
+
+            </div>
           </div>
       
       </div>

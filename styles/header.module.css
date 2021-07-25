@@ -1,7 +1,73 @@
-.main{
-    background-color: red;
+.header{
+    margin-top: 8px;
     width: 100%;
-    height: 5vh;
+    z-index: 1000;
+}
+.header .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 60px;
+    transition: 0.5s;
+    filter: var(--invert);
+}
+
+#logo:hover {
+    transform: rotate(-8deg) scale(1.1);
+}
+
+.header ul {
+    list-style: none;
     display: flex;
     align-items: center;
 }
+.header li {
+    display: inline-flex;
+}
+.header ul li a {
+    text-decoration: none;
+    padding: 0.45rem 0.8rem 0.45rem 0.8rem;
+    margin: 0 0.4rem 0 0.4rem;
+    color: var(--text-color);
+}
+
+.header ul li a:hover {
+    background-color: var(--nav-ul-hover);
+    border-radius: 5px;
+}
+.header ul li a:active {
+    color: var(--text-color);
+}
+.active{
+    background-color: #3741515d;
+    border-radius: 5px;
+}
+#mode{
+    margin-top: 2px;
+    width: 12px;
+    height: auto;
+    margin-right: 5px;
+    filter: var(--invert);
+    position: relative;
+}
+
+#switch{
+    background-color: var(--switch-color);
+    text-decoration: none;
+    padding: 0.45rem 0.8rem 0.45rem 0.8rem;
+    margin: 0 0.4rem 0 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#switch:hover{
+    background-color: var(--switch-hover-color);
+}
+
+.widthl{
+    width: inherit;
+}
+
+
