@@ -11,7 +11,7 @@ export default function Header() {
                 <ul>
                     <li className={router.pathname == "/" ? styles.active : ""}><Link href="/">Home</Link> </li>
                     <li className={router.pathname == "/commands" ? styles.active : ""}><Link href="/commands">Commands</Link> </li>
-                    <li className={router.pathname == "/dashboard" ? styles.active : ""}><Link href="/">Dashboard</Link> </li>
+                    <li className={router.pathname == "/another" ? styles.active : ""}><Link href="/">Something</Link> </li>
                 </ul>
                 <div className={styles.login}>
                     Login
