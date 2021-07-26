@@ -21,7 +21,8 @@ export default function Home() {
               <h1>Atsukoro</h1>
               <h2>Best Anime bot</h2>
               <div className={styles.buttons}>
-
+                  <div className={styles.invite}>Invite</div>
+                  <div className={styles.github}>Github</div>
               </div>
             </div>
         
