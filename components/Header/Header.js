@@ -21,21 +21,21 @@ export default function Header() {
                     <li className={router.pathname == "/" ? styles.active : ""}><Link href="/">Home</Link> </li>
                     <li className={router.pathname == "/commands" ? styles.active : ""}><Link href="/commands">Commands</Link> </li>
                     <Tooltip
-                    title="Coming Soon™"
-                    position="bottom"
-                    trigger="mouseenter"
+                        title="Coming Soon™"
+                        position="bottom"
+                        trigger="mouseenter"
                     >
-                    <li className={router.pathname == "/another" ? styles.active : ""}><Link href="/">Dashboard</Link> </li>
+                        <li className={router.pathname == "/another" ? styles.active : ""}>Dashboard</li>
                     </Tooltip>
                 </ul>
                     <Tooltip
-                    title="Coming Soon™"
-                    position="bottom"
-                    trigger="mouseenter"
+                        title="Coming Soon™"
+                        position="bottom"
+                        trigger="mouseenter"
                     >
-                    <div className={styles.login}>
-                        Login
-                    </div>
+                        <div className={styles.login}>
+                            Login
+                        </div>
                     </Tooltip>
             </div>
         </nav>
