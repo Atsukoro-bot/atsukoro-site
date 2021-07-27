@@ -3,6 +3,7 @@
     font-weight: 500;
     width: 100%;
     z-index: 1000;
+    padding: 0 3rem 0 3rem;
 }
 .header .items {
     display: flex;
@@ -10,13 +11,14 @@
     align-items: center;
 }
 
-#logo {
+.logo {
     height: 60px;
+    width: 60px;
     transition: 0.5s;
     filter: var(--invert);
 }
 
-#logo:hover {
+.logo:hover {
     transform: rotate(-8deg) scale(1.1);
 }
 
@@ -37,13 +39,13 @@
 
 .active {
     font-weight: 600;
-    color: #404EED;
+    color: #5865F2;
 }
 
 
 
 .login{
-    box-shadow: 0px 0px 15px 0px #404EED;
+    box-shadow: 0px 0px 15px 0px #5865F2;
     background-color: var(--switch-color);
     text-decoration: none;
     padding: 0.45rem 2.5rem 0.45rem 2.5rem;
@@ -51,7 +53,7 @@
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #404EED;
+    background-color: #5865F2;
 
 }
 #login:hover{
