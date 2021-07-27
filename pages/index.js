@@ -5,6 +5,7 @@ import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 
+import preview1 from "../public/images/preview1.png"
 
 
 export default function Home() {
@@ -30,13 +31,32 @@ export default function Home() {
         <div className={styles.section}>
           <div className={styles.container}>
             <div className={styles.info}>
-              
+              <div className={styles.image}>
+                <Image src={preview1} />
+              </div>
+              <div className={styles.dcs}>
+                  <h1>Cool commands</h1>
+                  <h2>bruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruh</h2>
+              </div> 
             </div>
             <div className={styles.info}>
-              
-              </div>
+            <div className={styles.dcs_l}>
+                    <h1>Cool commands</h1>
+                    <h2>bruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruh</h2>
+                </div> 
+              <div className={styles.image}>
+                  <Image src={preview1} />
+                </div>
+
+            </div>
               <div className={styles.info}>
-              
+              <div className={styles.image}>
+                <Image src={preview1} />
+              </div>
+              <div className={styles.dcs}>
+                  <h1>Cool commands</h1>
+                  <h2>bruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruh</h2>
+              </div> 
               </div>
 
           </div>
