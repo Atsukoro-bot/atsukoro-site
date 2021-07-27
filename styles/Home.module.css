@@ -147,6 +147,12 @@
 }
 
 
+@media only screen and (min-width: 2100px){
+  .wave{
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 600px){
   .head h1{
     color: white;
