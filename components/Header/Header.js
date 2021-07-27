@@ -15,7 +15,9 @@ export default function Header() {
         <nav className={styles.header}>
             <div className={styles.items}>
                 <div className={styles.logo}>
-                    <Image src={logo}/>
+                    <Link href="/">
+                        <Image src={logo}/>
+                    </Link>
                 </div>
                 <ul>
                     <li className={router.pathname == "/" ? styles.active : ""}><Link href="/">Home</Link> </li>
