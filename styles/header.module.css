@@ -11,10 +11,9 @@
 }
 
 .logo {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     transition: 0.5s;
-    filter: var(--invert);
 }
 
 .logo:hover {

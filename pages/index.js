@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
+
 import styles from '../styles/Home.module.css'
 
-import wave from "../public/images/wave.png"
 
 
-import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
               <h1>Atsukoro</h1>
               <h2>Best Anime bot</h2>
               <div className={styles.buttons}>
-                  <div className={styles.invite}><Link href={"/commands"}>Invite</Link></div>
+                  <div className={styles.invite}><Link href={"https://discord.com"}>Invite</Link></div>
                   <div className={styles.github}>Github</div>
               </div>
             </div>
@@ -29,6 +29,15 @@ export default function Home() {
         </div>
         <div className={styles.section}>
           <div className={styles.container}>
+            <div className={styles.info}>
+              
+            </div>
+            <div className={styles.info}>
+              
+              </div>
+              <div className={styles.info}>
+              
+              </div>
 
           </div>
         </div>

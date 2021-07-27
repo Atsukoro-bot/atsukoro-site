@@ -6,6 +6,7 @@
   margin: 0 auto;
   position: relative;
   display: flex;
+  flex-direction: column;
 }
 
 
@@ -22,7 +23,7 @@
   background-color: #0d0e17;
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 180vh;
   top:100vh
 }
 
@@ -91,6 +92,23 @@
 }
 
 
+
+.info{
+  display: flex;
+  width: 100%;
+  height: 21rem;
+  background: red;
+  margin: 5rem 0 5rem 0 ;
+}
+
+
+.info .image{
+  border-radius: 20px;
+}
+
+.info .dcs{
+  font-size: large;
+}
 
 
 @media only screen and (max-width: 600px){

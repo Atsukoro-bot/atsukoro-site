@@ -7,9 +7,12 @@ import Head from "next/head"
 import '../styles/globals.css'
 import Header from '../components/Header.js'
 
-NProgress.configure({ showSpinner: false });
 
-Router.events.on('routeChangeStart', () => NProgress.start()); Router.events.on('routeChangeComplete', () => NProgress.done()); Router.events.on('routeChangeError', () => NProgress.done());  
+//NProgress config
+NProgress.configure({ showSpinner: false });
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
 
 
 function MyApp({ Component, pageProps }) {
