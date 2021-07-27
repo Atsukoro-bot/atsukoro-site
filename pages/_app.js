@@ -5,7 +5,7 @@ import Router from "next/router"
 import Head from "next/head"
 
 import '../styles/globals.css'
-import Header from '../components/Header.js'
+import Header from '../components/Header/Header'
 
 
 //NProgress config
