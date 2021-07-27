@@ -25,7 +25,7 @@ export default function Header() {
                         position="bottom"
                         trigger="mouseenter"
                     >
-                        <li className={router.pathname == "/another" ? styles.active : ""}>Dashboard</li>
+                        <li className={router.pathname == "/another" ? styles.active : ""}><a>Dashboard</a></li>
                     </Tooltip>
                 </ul>
                     <Tooltip
