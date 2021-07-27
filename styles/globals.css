@@ -41,3 +41,11 @@ a {
   background: var(--switch-color);
   opacity: 0.8;
 }
+
+
+/* NProgress settings */
+
+#nprogress .bar {
+  background: #5865F2;
+  box-shadow: 0px 0px 15px 0px #5865F2;
+}
