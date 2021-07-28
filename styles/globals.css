@@ -22,23 +22,24 @@ a {
 
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 .select-dropdown ::-webkit-scrollbar {
-  width: 7px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--switch-hover-color)
+  background: #0d0e17;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--switch-color);
+  background: #5865F2;
+  border-radius: 50rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--switch-color);
+  background: #5865F2;
   opacity: 0.8;
 }
 
