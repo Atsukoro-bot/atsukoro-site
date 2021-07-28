@@ -38,11 +38,6 @@ a {
   border-radius: 50rem;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #5865F2;
-  opacity: 0.8;
-}
-
 
 /* NProgress settings */
 

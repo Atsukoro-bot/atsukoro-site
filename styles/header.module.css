@@ -17,6 +17,11 @@
     cursor: pointer;
 }
 
+.logo img {
+    border-radius: 8px;
+}
+
+
 .logo:hover {
     transform: rotate(-8deg) scale(1.1);
 }
