@@ -62,7 +62,6 @@
 
 
 .invite {
-  box-shadow: 0px 0px 15px 0px #5865F2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,9 +72,13 @@
   height: 3.7rem;
   border-radius: 100rem;
   cursor: pointer;
+  transition: 0.15s;
 
 }
 
+.invite:hover{
+  box-shadow: 0px 0px 15px 0px #5865F2;
+}
 
 .github {
   cursor: pointer;
@@ -88,10 +91,12 @@
   width: 45%;
   height: 3.7rem;
   border-radius: 100rem;
-
+  transition: 0.15s;
 }
 
-
+.github:hover{
+  box-shadow: 0px 0px 15px 0px #0d0e17;
+}
 
 .info{
   display: flex;

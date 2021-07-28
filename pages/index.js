@@ -2,13 +2,19 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import Aos from "aos"
+import "aos/dist/aos.css"
+
 import styles from '../styles/Home.module.css'
 
-
 import preview1 from "../public/images/preview1.png"
+import { useEffect } from 'react'
 
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init()
+  }, [])
   return (
     <>
       <div className={styles.wave}/>
@@ -17,20 +23,24 @@ export default function Home() {
             <meta name="description" content="Best Discord anime bot" />
             <link rel="icon" href="/favicon.ico" />
           </Head>
-          <div className={styles.container}>
+          <div data-aos="fade-right" className={styles.container}>
             <div className={styles.head}>
               <h1>Atsukoro</h1>
               <h2>Best Anime bot</h2>
               <div className={styles.buttons}>
-                  <div className={styles.invite}><Link href={"https://discord.com"}>Invite</Link></div>
+                <Link href={"https://discord.com"}>
+                  <div className={styles.invite}>Invite</div>
+                </Link>
+                <Link href={"https://github.com/Atsukoro-bot"}>
                   <div className={styles.github}>Github</div>
+                </Link>
               </div>
             </div>
         
         </div>
         <div className={styles.section}>
           <div className={styles.container}>
-            <div className={styles.info}>
+            <div data-aos="fade-up-right" className={styles.info}>
               <div className={styles.image}>
                 <Image src={preview1} />
               </div>
@@ -39,7 +49,7 @@ export default function Home() {
                   <h2>bruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruh</h2>
               </div> 
             </div>
-            <div className={styles.info}>
+            <div data-aos="fade-up-left" className={styles.info}>
             <div className={styles.dcs_l}>
                     <h1>Cool commands</h1>
                     <h2>bruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruh</h2>
@@ -49,14 +59,14 @@ export default function Home() {
                 </div>
 
             </div>
-              <div className={styles.info}>
-              <div className={styles.image}>
-                <Image src={preview1} />
-              </div>
-              <div className={styles.dcs}>
-                  <h1>Cool commands</h1>
-                  <h2>bruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruh</h2>
-              </div> 
+              <div data-aos="fade-up-right" className={styles.info}>
+                <div className={styles.image}>
+                  <Image src={preview1} />
+                </div>
+                <div className={styles.dcs}>
+                    <h1>Cool commands</h1>
+                    <h2>bruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruh</h2>
+                </div> 
               </div>
 
           </div>
