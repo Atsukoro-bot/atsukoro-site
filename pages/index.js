@@ -26,8 +26,8 @@ export default function Home() {
           <div data-aos="fade-right" className={styles.container}>
             <div className={styles.head}>
               <h1>Atsukoro</h1>
-              <h2>Best Anime bot</h2>
-              <div className={styles.buttons}>
+              <h2 data-aos-delay="20" data-aos="fade-right">Best Anime bot</h2>
+              <div data-aos-delay="100" data-aos="fade-right" className={styles.buttons}>
                 <Link href={"https://discord.com"}>
                   <div className={styles.invite}>Invite</div>
                 </Link>
@@ -68,7 +68,15 @@ export default function Home() {
                     <h2>bruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruh</h2>
                 </div> 
               </div>
-
+            <div data-aos="fade-up" className={styles.ready}>
+              <p>Ready to try it?</p>
+              <Link href={"https://discord.com"}>
+                  <div className={styles.invite}>Invite</div>
+                </Link>
+            </div>
+          </div>
+          <div className={styles.footer}>
+            Website made by <Link href="https://github.com/lnxcz">lynx</Link>
           </div>
         </div>
     </>
