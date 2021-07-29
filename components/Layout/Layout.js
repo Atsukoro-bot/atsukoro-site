@@ -1,4 +1,4 @@
-import Header from '../Header/header.js'
+import Header from '../Header/Header'
 import NProgress from "nprogress"
 import Router from 'next/router';
 import 'nprogress/nprogress.css';
