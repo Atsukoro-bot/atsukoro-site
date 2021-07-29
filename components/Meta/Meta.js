@@ -6,6 +6,9 @@ const Meta = ({title, description}) => {
             <title>{title}</title>
             <meta name="description" content={description} />
             <link rel="icon" href="../../public/icons/favicon.ico" />
+            <link rel="apple-touch-icon" sizes="180x180" href="../../public/icons//apple-touch-icon.png" />
+            <link rel="icon" type="image/png" sizes="32x32" href="../../public/icons/favicon-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="../../public/icons/favicon-16x16.png" />
 
             {/* Settings */}
             <link rel="stylesheet" type="text/css" href="/nprogress.css" />
