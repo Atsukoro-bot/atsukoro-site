@@ -38,12 +38,9 @@ a {
   border-radius: 50rem;
 }
 
-
-/* NProgress settings */
-
 #nprogress .bar {
-  background: #5865F2;
-  box-shadow: 0px 0px 15px 0px #5865F2;
+  background: #5865F2 !important;
+  box-shadow: 0px 0px 15px 0px #5865F2 !important;
 }
 
 a{
