@@ -22,7 +22,7 @@ const Meta = ({title, description}) => {
             {/* Open Graph */}
             <meta property="og:url" content="https://atsukoro.bruh" key="ogurl" />
             <meta property="og:image" content="https://i.imgur.com/vbIuETI.png" key="ogimage" />
-            <meta property="og:site_name" content={title} key="ogsitename" />
+            <meta property="og:title" content={title} key="ogtitle" />
             <meta property="og:description" content={description} key="ogdesc" />
 
             {/* Other */}
