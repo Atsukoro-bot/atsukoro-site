@@ -4,7 +4,7 @@ import { useState } from 'react';
 import styles from '../styles/Commands.module.css'
 
 export default function Home({data}) {
-  const [categoryName, setCategoryName] = useState("nsfw");
+  const [categoryName, setCategoryName] = useState("Informational");
 
   return (
     <div className={styles.container}>
@@ -28,7 +28,7 @@ export default function Home({data}) {
             <div className={styles.title}>
               <p>ak.{c}</p>
               <div className={styles.alias}>
-                [joe, biden]
+                [No aliases]
               </div>
             </div>
             <div className={styles.description}>
@@ -36,7 +36,6 @@ export default function Home({data}) {
             </div>
           </div>
           ))}
-          <hr className={styles.hr}/>
         </div>
       </div>
 
@@ -44,12 +43,6 @@ export default function Home({data}) {
   )
 }
 
-
-// {data.map((cmd) => (
-//   <div className={styles.data}>
-//     <p>{cmd.name}</p>
-//   </div>
-// ))}
 
 export async function getStaticProps(context) {
   const res = await fetch(`https://atsukoro.herokuapp.com/commands`, {
@@ -62,11 +55,6 @@ export async function getStaticProps(context) {
     var category = data[item.category] = data[item.category] || {};
     category[item.name] = data[item.name] || {description: item.description};
 });
-
-  // var titles = []
-  // Object.keys(data).map((c) => {
-  //   titles.push(c)
-  // }
 
 
   if (!data) {
