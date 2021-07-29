@@ -16,13 +16,12 @@ export default function Home({data}) {
       <div className={styles.flex}>
         <div className={styles.cmd}>
           {Object.keys(data).map((c) => (
-            <div key={c} onClick={() => setCategoryName(c)} className={styles.cmdbutton}>
+            <div key={c} onClick={() => setCategoryName(c)} className={categoryName == c ? styles.cmdbuttonactive : styles.cmdbutton}>
               {c}
             </div>
           ))}
         </div>
         <div className={styles.cmdinfobox}>
-          {console.log(Object.keys(data[categoryName]).length)}
         {Object.keys(data[categoryName]).map((c) => (
           <div className={styles.cmdinfo}>
             <div className={styles.title}>

@@ -19,14 +19,36 @@
     overflow-x: hidden;
 }
 
+.cmd::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  .cmd::-webkit-scrollbar-track {
+    background: #15161D;
+  }
+  
+  .cmd::-webkit-scrollbar-thumb {
+    background: #1c1e27;
+    border-radius: 50rem;
+  }
+
+
 .cmdinfobox{
-    overflow-x: hidden;
+    overflow: auto;
     width: 75%;
     height: 100%;
     background-color: #181922;
     border-radius:  0 18px 18px 0;
 }
 
+
+
+.cmdinfobox::-webkit-scrollbar {
+    width: 0px;
+    margin-top: 10rem;
+    border-radius: 5px;
+  }
+  
 
 .cmdbutton{
     display: flex;
@@ -39,9 +61,21 @@
     font-weight: 600;
     margin-bottom: 1.8rem;
     cursor: pointer;
-
 }
 
+.cmdbuttonactive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5865F2;
+    border-radius: 11px;
+    padding: .8rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px 0px #5865F2;
+}
 
 .cmdinfo{
     width: 100%;
