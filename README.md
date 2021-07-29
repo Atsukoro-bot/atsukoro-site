@@ -1,4 +1,4 @@
-<center>![logo](https://cdn.discordapp.com/attachments/728646482437210193/869963219358322698/Navrh_bez_nazvu.png)</center>
+![logo](https://cdn.discordapp.com/attachments/728646482437210193/869963219358322698/Navrh_bez_nazvu.png)
 
 # Atsukoro Site
 
