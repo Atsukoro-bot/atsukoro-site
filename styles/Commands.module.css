@@ -1,0 +1,44 @@
+.flex{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    align-items: center;
+    height: 30rem;
+}
+
+
+.cmd{
+    width: 25%;
+    height: 100%;
+    background-color: blue;
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+
+.cmdinfobox{
+    overflow-x: hidden;
+    width: 75%;
+    height: 100%;
+    background-color: red;
+}
+
+
+.cmdbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rosybrown;
+    padding: .9rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+}
+
+
+.cmdinfo{
+    width: 100%;
+    border-bottom: 2px solid #dddd;
+    padding: 0 1rem 0 0;
+    height: 5.5rem;
+}

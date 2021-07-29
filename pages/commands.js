@@ -10,16 +10,56 @@ export default function Home({data}) {
         <meta name="description" content="Best Discord anime bot" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {data.map((cmd) => (
-        <div className={styles.data}>
-          <p>{cmd.name}</p>
+      <div className={styles.flex}>
+        <div className={styles.cmd}>
+          <div className={styles.cmdbutton}>
+            Anime
+          </div>
+          <div className={styles.cmdbutton}>
+            Anime
+          </div>
+          <div className={styles.cmdbutton}>
+            Anime
+          </div>
         </div>
-        ))}
+        <div className={styles.cmdinfobox}>
+          <div className={styles.cmdinfo}>
+
+          </div>
+          <div className={styles.cmdinfo}>
+            
+            </div>
+            <div className={styles.cmdinfo}>
+            
+            </div>
+            <div className={styles.cmdinfo}>
+            
+            </div>
+            <div className={styles.cmdinfo}>
+            
+            </div>
+            <div className={styles.cmdinfo}>
+            
+            </div>
+            <div className={styles.cmdinfo}>
+            
+            </div>
+            <div className={styles.cmdinfo}>
+            
+            </div>
+        </div>
+      </div>
 
     </div>
   )
 }
 
+
+// {data.map((cmd) => (
+//   <div className={styles.data}>
+//     <p>{cmd.name}</p>
+//   </div>
+// ))}
 
 export async function getStaticProps(context) {
   const res = await fetch(`https://atsukoro.herokuapp.com/commands`, {
