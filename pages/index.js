@@ -10,6 +10,7 @@ import styles from '../styles/Home.module.css'
 import preview1 from "../public/images/preview1.png"
 import { useEffect } from 'react'
 
+import Meta from '../components/Meta/Meta'
 
 export default function Home() {
   useEffect(() => {

@@ -1,18 +1,15 @@
-import Head from 'next/head'
 import { useState } from 'react';
 
 import styles from '../styles/Commands.module.css'
 
-export default function Home({data}) {
+import Meta from '../components/Meta/Meta'
+
+export default function Commands({data}) {
   const [categoryName, setCategoryName] = useState("Informational");
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Atsukoro Commands</title>
-        <meta name="description" content="Best Discord anime bot" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta title={"Atsukoro Commands"}/>
       <div className={styles.flex}>
         <div className={styles.cmd}>
           {Object.keys(data).map((c) => (

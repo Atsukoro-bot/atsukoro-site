@@ -1,18 +1,22 @@
-import Head from 'next/head'
-import Header from '../Header'
+import Header from '../Header/header.js'
+import NProgress from "nprogress"
+import Router from 'next/router';
+import 'nprogress/nprogress.css';
 
-export default function Layout({ children, pageTitle, description, ...props }) {
+
+NProgress.configure({ showSpinner: false });
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
+
+
+export default function Layout({ children, ...props }) {
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <title>{pageTitle}</title>
-      </Head>
-      <section>
         <Header />
-        <div className="content">{children}</div>
-      </section>
+        <div className="content">
+            {children}
+        </div>
     </>
   )
 }
