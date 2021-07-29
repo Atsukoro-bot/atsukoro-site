@@ -24,8 +24,17 @@ export default function Home({data}) {
         </div>
         <div className={styles.cmdinfobox}>
           <div className={styles.cmdinfo}>
-
+            <div className={styles.title}>
+              <p>ak.help</p>
+              <div className={styles.alias}>
+                [joe, biden]
+              </div>
+            </div>
+            <div className={styles.description}>
+              Joe bidenJoe bidenJoe bidenJoe bidenJoe bidenJoe biden
+            </div>
           </div>
+          <hr className={styles.hr}/>
           <div className={styles.cmdinfo}>
             
             </div>
