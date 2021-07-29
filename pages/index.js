@@ -18,6 +18,7 @@ export default function Home() {
   }, [])
   return (
     <>
+      <Meta/>
       <div className={styles.wave}/>
           <div data-aos="fade-right" className={styles.container}>
             <div className={styles.head}>
