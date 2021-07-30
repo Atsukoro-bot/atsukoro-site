@@ -14,8 +14,11 @@ import Meta from '../components/Meta/Meta'
 
 export default function Home() {
   useEffect(() => {
-    Aos.init()
-  }, [])
+    Aos.init({
+      disable: function() {
+        var maxWidth = 740;
+        return window.innerWidth < maxWidth;
+      }})}, [])
   return (
     <>
       <Meta/>
