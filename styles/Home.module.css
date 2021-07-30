@@ -204,6 +204,7 @@
 @media only screen and (max-width: 740px){
   .head h1{
     color: white;
+    text-align: center;
     font-size: 4.4em;
     font-weight: 800;
     margin: 0;
@@ -213,7 +214,12 @@
     color: white;
     font-size: 1.4em;
     position: absolute;
+    text-align: center;
+    left:50%;
+    transform: translate(-50%, 0);
     top: 31%;
+    width: 100%;
+    overflow: hidden;
     font-weight: 500;
     margin: 0;
   } 
@@ -264,5 +270,8 @@
 }
 .head .invite{
   width: 90%;
+}
+.head{
+  align-items: center;
 }
 }
