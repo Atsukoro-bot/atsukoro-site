@@ -5,7 +5,7 @@ import styles from '../styles/Commands.module.css'
 import Meta from '../components/Meta/Meta'
 
 export default function Commands({data}) {
-  const [categoryName, setCategoryName] = useState("Informational");
+  const [categoryName, setCategoryName] = useState("Utility");
 
   return (
     <div className={styles.container}>

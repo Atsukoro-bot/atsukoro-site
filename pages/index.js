@@ -23,7 +23,7 @@ export default function Home() {
           <div data-aos="fade-right" className={styles.container}>
             <div className={styles.head}>
               <h1>Atsukoro</h1>
-              <h2 data-aos-delay="20" data-aos="fade-right">Best Anime bot</h2>
+              <h2 data-aos-delay="20" data-aos="fade-right">Anime based discord bot.</h2>
               <div data-aos-delay="100" data-aos="fade-right" className={styles.buttons}>
                 <Link href={"https://discord.com"}>
                   <div className={styles.invite}>Invite</div>
@@ -42,8 +42,8 @@ export default function Home() {
                 <Image src={preview1} />
               </div>
               <div className={styles.dcs}>
-                  <h1>Cool commands</h1>
-                  <h2>bruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruh</h2>
+                  <h1>Search from Anilist</h1>
+                  <h2>You </h2>
               </div> 
             </div>
             <div data-aos="fade-up-left" className={styles.info}>
