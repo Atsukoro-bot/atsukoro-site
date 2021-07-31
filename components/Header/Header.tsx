@@ -17,13 +17,13 @@ const Header:React.FC<HeaderProps> = ({}) => {
         <nav className={styles.header}>
             <div className={styles.items}>
                 <div className={styles.logo}>
-                    <Link href="/">
-                        <Image src={logo}/>
+                    <Link href="/" passHref>
+                        <Image src={logo} alt="Logos"/>
                     </Link>
                 </div>
                 <ul>
-                    <li className={router.pathname == "/" ? styles.active : ""}><Link href="/">Home</Link> </li>
-                    <li className={router.pathname == "/commands" ? styles.active : ""}><Link href="/commands">Commands</Link> </li>
+                    <li className={router.pathname == "/" ? styles.active : ""}><Link href="/" passHref>Home</Link> </li>
+                    <li className={router.pathname == "/commands" ? styles.active : ""}><Link href="/commands" passHref>Commands</Link> </li>
                     <Tooltip
                         title="Coming Soon™"
                         position="bottom"
