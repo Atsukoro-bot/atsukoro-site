@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -12,11 +11,13 @@ import { useEffect } from 'react'
 
 import Meta from '../components/Meta/Meta'
 
-export default function Home() {
+interface Props {}
+
+const Index: React.FC<Props> = ({}) => {
   useEffect(() => {
     Aos.init({
       disable: function() {
-        var maxWidth = 740;
+        var maxWidth: number = 740;
         return window.innerWidth < maxWidth;
       }})}, [])
   return (
@@ -83,3 +84,5 @@ export default function Home() {
 
   )
 }
+
+export default Index;

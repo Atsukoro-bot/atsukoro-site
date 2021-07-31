@@ -8,7 +8,9 @@ import Image from "next/image"
 
 import logo from "../../public/images/logo.png"
 
-export default function Header() {
+interface HeaderProps {}
+
+const Header:React.FC<HeaderProps> = ({}) => {
     const router = useRouter();
 
     return (
@@ -43,3 +45,6 @@ export default function Header() {
         </nav>
     )
 }
+
+
+export default Header;

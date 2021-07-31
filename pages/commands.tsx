@@ -3,9 +3,14 @@ import { useState } from 'react';
 import styles from '../styles/Commands.module.css'
 
 import Meta from '../components/Meta/Meta'
+import { GetStaticProps } from 'next';
 
-export default function Commands({data}) {
-  const [categoryName, setCategoryName] = useState("Utility");
+interface CommandsProps {
+  data: string
+}
+
+const Commands: React.FC<CommandsProps> = ({data}) => {
+  const [categoryName, setCategoryName] = useState<string>("Utility");
 
   return (
     <div className={styles.container}>
@@ -40,14 +45,15 @@ export default function Commands({data}) {
 }
 
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context) => {
+
   const res = await fetch(`https://atsukoro.herokuapp.com/commands`, {
     method: 'POST'
   });
   const coms = await res.json()
 
-  var data = {};
-  coms.forEach(function(item) {
+  var data: object = {};
+  coms.forEach(function(item: any) {
     var category = data[item.category] = data[item.category] || {};
     category[item.name] = data[item.name] || {description: item.description};
 });
@@ -66,3 +72,5 @@ export async function getStaticProps(context) {
     props: { data }
   } 
 }
+
+export default Commands;
