@@ -29,10 +29,10 @@ const Index: React.FC<Props> = ({}) => {
               <h1>Atsukoro</h1>
               <h2 data-aos-delay="20" data-aos="fade-right">Anime based discord bot.</h2>
               <div data-aos-delay="100" data-aos="fade-right" className={styles.buttons}>
-                <Link href={"https://discord.com"}>
+                <Link href={"https://discord.com"} passHref>
                   <div className={styles.invite}>Invite</div>
                 </Link>
-                <Link href={"https://github.com/Atsukoro-bot"}>
+                <Link href={"https://github.com/Atsukoro-bot"} passHref>
                   <div className={styles.github}>Github</div>
                 </Link>
               </div>
@@ -43,7 +43,7 @@ const Index: React.FC<Props> = ({}) => {
           <div className={styles.container}>
             <div data-aos="fade-up-right" className={styles.info}>
               <div className={styles.image}>
-                <Image src={preview1} />
+                <Image src={preview1} alt="preview1"/>
               </div>
               <div className={styles.dcs}>
                   <h1>Search from Anilist</h1>
@@ -56,13 +56,13 @@ const Index: React.FC<Props> = ({}) => {
                     <h2>bruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruh</h2>
                 </div> 
               <div className={styles.image}>
-                  <Image src={preview1} />
+                  <Image src={preview1} alt="preview2" />
                 </div>
 
             </div>
               <div data-aos="fade-up-right" className={styles.info}>
                 <div className={styles.image}>
-                  <Image src={preview1} />
+                  <Image src={preview1} alt="preview3"/>
                 </div>
                 <div className={styles.dcs}>
                     <h1>Cool commands</h1>
@@ -71,7 +71,7 @@ const Index: React.FC<Props> = ({}) => {
               </div>
             <div data-aos="fade-up" className={styles.ready}>
               <p>Ready to try it?</p>
-              <Link href={"https://discord.com"}>
+              <Link href={"https://discord.com"} passHref>
                   <div className={styles.invite}>Invite</div>
                 </Link>
             </div>

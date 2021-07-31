@@ -16,7 +16,6 @@ const Meta: React.FC<MetaProps> = ({title, description}) => {
             <link rel="icon" type="image/png" sizes="16x16" href="../../public/icons/favicon-16x16.png" />
 
             {/* Settings */}
-            <link rel="stylesheet" type="text/css" href="/nprogress.css" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta charSet="utf-8" />
 
