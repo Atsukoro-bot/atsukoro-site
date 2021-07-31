@@ -1,4 +1,4 @@
-import styles from "../../styles/commands.module.css"
+import styles from "../../styles/Commands.module.css"
 
 export interface CommandProps {
   data: object,
