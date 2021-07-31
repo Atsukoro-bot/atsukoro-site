@@ -25,7 +25,7 @@ const Commands: React.FC<CommandsProps> = ({data}) => {
         </div>
         <div className={styles.cmdinfobox}>
         {Object.keys(data[categoryName]).map((c) => (
-          <div className={styles.cmdinfo}>
+          <div className={styles.cmdinfo} key={c}>
             <div className={styles.title}>
               <p>ak.{c}</p>
               <div className={styles.alias}>
