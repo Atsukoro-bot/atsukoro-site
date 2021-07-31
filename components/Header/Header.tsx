@@ -24,13 +24,7 @@ const Header:React.FC<HeaderProps> = ({}) => {
                 <ul>
                     <li className={router.pathname == "/" ? styles.active : ""}><Link href="/" passHref>Home</Link> </li>
                     <li className={router.pathname == "/commands" ? styles.active : ""}><Link href="/commands" passHref>Commands</Link> </li>
-                    <Tooltip
-                        title="Coming Soon™"
-                        position="bottom"
-                        trigger="mouseenter"
-                    >
-                        <li className={router.pathname == "/another" ? styles.active : ""}><a>Dashboard</a></li>
-                    </Tooltip>
+                    <li className={router.pathname == "/support" ? styles.active : ""}><Link href="https://discord.gg/2396PDsVYM" passHref>>Support</Link></li>
                 </ul>
                     <Tooltip
                         title="Coming Soon™"

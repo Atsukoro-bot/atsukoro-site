@@ -9,7 +9,7 @@ interface CommandsProps {
   data: string
 }
 
-const Commands: React.FC<CommandsProps> = ({data}) => {
+const CommandsPage = ({data}) => {
   const [categoryName, setCategoryName] = useState<string>("Utility");
 
   return (
@@ -47,9 +47,7 @@ const Commands: React.FC<CommandsProps> = ({data}) => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
 
-  const res = await fetch(`https://atsukoro.herokuapp.com/commands`, {
-    method: 'POST'
-  });
+  const res = await fetch(`https://atsukoro.herokuapp.com/commands`);
   const coms = await res.json()
 
   var data: object = {};
@@ -73,4 +71,4 @@ export const getStaticProps: GetStaticProps = async (context) => {
   } 
 }
 
-export default Commands;
+export default CommandsPage
