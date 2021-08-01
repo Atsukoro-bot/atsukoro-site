@@ -14,7 +14,7 @@ function Atsukoro({ Component, pageProps }: AppProps) {
   return (
     <>
       <Header />
-        <Component {...pageProps} />
+      <Component {...pageProps} />
     </>
   )
 }

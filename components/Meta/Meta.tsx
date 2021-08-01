@@ -5,8 +5,8 @@ interface MetaProps {
     description?: string
 }
 
-const Meta: React.FC<MetaProps> = ({title, description}) => {
-    return(
+const Meta: React.FC<MetaProps> = ({ title, description }) => {
+    return (
         <Head>
             <title>{title}</title>
             <meta name="description" content={description} />

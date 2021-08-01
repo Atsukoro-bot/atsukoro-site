@@ -8,9 +8,9 @@ import Image from "next/image"
 
 import logo from "../../public/images/logo.png"
 
-interface HeaderProps {}
+interface HeaderProps { }
 
-const Header:React.FC<HeaderProps> = ({}) => {
+const Header: React.FC<HeaderProps> = ({ }) => {
     const router = useRouter();
 
     return (
@@ -18,7 +18,7 @@ const Header:React.FC<HeaderProps> = ({}) => {
             <div className={styles.items}>
                 <div className={styles.logo}>
                     <Link href="/" passHref>
-                        <Image src={logo} alt="Logos"/>
+                        <Image src={logo} alt="Logos" />
                     </Link>
                 </div>
                 <ul>
@@ -26,15 +26,15 @@ const Header:React.FC<HeaderProps> = ({}) => {
                     <li className={router.pathname == "/commands" ? styles.active : ""}><Link href="/commands" passHref>Commands</Link> </li>
                     <li className={router.pathname == "/support" ? styles.active : ""}><Link href="https://discord.gg/2396PDsVYM" passHref>Support</Link></li>
                 </ul>
-                    <Tooltip
-                        title="Coming Soon™"
-                        position="bottom"
-                        trigger="mouseenter"
-                    >
-                        <div className={styles.login}>
-                            Login
-                        </div>
-                    </Tooltip>
+                <Tooltip
+                    title="Coming Soon™"
+                    position="bottom"
+                    trigger="mouseenter"
+                >
+                    <div className={styles.login}>
+                        Login
+                    </div>
+                </Tooltip>
             </div>
         </nav>
     )
