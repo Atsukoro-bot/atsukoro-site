@@ -40,7 +40,7 @@ export const FeaturePreview: React.FC<Props> = () => {
           <Image src={preview1} alt="preview2" />
         </div>
         <div className={styles.dcs_l}>
-          <h1>Cool commands</h1>
+          <h1>Play anime quiz</h1>
           <h2>bruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruhbruhbruh bruh</h2>
         </div>
 
