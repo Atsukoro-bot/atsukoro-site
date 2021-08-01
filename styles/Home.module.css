@@ -7,7 +7,6 @@
   flex-direction: column;
 }
 
-
 .wave {
   position: absolute;
   width: 100%;
@@ -47,7 +46,6 @@
   margin: 0;
 }
 
-
 .head .buttons {
   display: flex;
   width: 70%;
@@ -56,14 +54,11 @@
   justify-content: space-between;
 }
 
-
-
-
 .invite {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #5865F2;
+  background-color: #5865f2;
   width: 45%;
   font-size: 1.4rem;
   font-weight: 600;
@@ -71,11 +66,10 @@
   border-radius: 100rem;
   cursor: pointer;
   transition: 0.15s;
-
 }
 
 .invite:hover {
-  box-shadow: 0 0 15px 0 #5865F2;
+  box-shadow: 0 0 15px 0 #5865f2;
 }
 
 .github {
@@ -104,28 +98,23 @@
   margin: 5rem 0;
 }
 
-
 .info .image {
   font-size: 0;
   align-self: center;
   width: 500px;
   border-radius: 15px;
   box-shadow: 0 0 15px 0 #36393f79;
-
 }
-
 
 .ready {
   margin-top: 2.5rem;
   align-items: center;
   display: flex;
   flex-direction: column;
-
 }
 
 .ready .invite {
   width: 30rem;
-
 }
 
 .ready p {
@@ -134,13 +123,12 @@
   font-weight: 700;
 }
 
-
 .footer {
   margin-top: 5rem;
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: center
+  justify-content: center;
 }
 
 .footer a {
@@ -150,7 +138,6 @@
 
 .info img {
   border-radius: 15px;
-
 }
 
 .info .dcs {
@@ -175,7 +162,6 @@
   text-align: center;
 }
 
-
 .info .dcs h1 {
   font-size: 1.6rem;
   font-weight: 700;
@@ -188,13 +174,11 @@
   text-align: center;
 }
 
-
 @media only screen and (min-width: 2100px) {
   .wave {
     display: none;
   }
 }
-
 
 @media only screen and (max-width: 1100px) {
   .container {
@@ -216,10 +200,7 @@
   }
 }
 
-
-
 @media only screen and (max-width: 740px) {
-
   .head h1 {
     color: white;
     text-align: center;
@@ -259,7 +240,6 @@
     align-self: center;
     width: 95%;
     border-radius: 8px;
-
   }
 
   .info img {
@@ -268,7 +248,6 @@
 
   .ready .invite {
     width: 90%;
-
   }
 
   .container {

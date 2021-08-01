@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
 
 html,
 body {
-  color: #ECECEC;
-  background-color: #1F222C;
+  color: #ececec;
+  background-color: #1f222c;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -19,7 +19,6 @@ a {
 * {
   box-sizing: border-box;
 }
-
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -34,13 +33,13 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #5865F2;
+  background: #5865f2;
   border-radius: 50rem;
 }
 
 #nprogress .bar {
-  background: #5865F2 !important;
-  box-shadow: 0px 0px 15px 0px #5865F2 !important;
+  background: #5865f2 !important;
+  box-shadow: 0px 0px 15px 0px #5865f2 !important;
 }
 
 a {

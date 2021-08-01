@@ -1,9 +1,9 @@
-import 'nprogress/nprogress.css';
-import Header from '../components/Header/Header'
-import NProgress from "nprogress"
-import Router from 'next/router';
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "nprogress/nprogress.css";
+import Header from "../components/Header/Header";
+import NProgress from "nprogress";
+import Router from "next/router";
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
 
 NProgress.configure({ showSpinner: false });
 Router.events.on("routeChangeStart", () => NProgress.start());
@@ -16,7 +16,7 @@ function Atsukoro({ Component, pageProps }: AppProps) {
       <Header />
       <Component {...pageProps} />
     </>
-  )
+  );
 }
 
-export default Atsukoro
+export default Atsukoro;

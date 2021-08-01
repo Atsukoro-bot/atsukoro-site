@@ -1,111 +1,102 @@
 .header {
-    font-size: 1.2rem;
-    font-weight: 500;
-    width: 100%;
-    padding: 0 6rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 0 6rem;
 }
 
 .header .items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    height: 50px;
-    width: 50px;
-    transition: 0.5s;
-    cursor: pointer;
+  height: 50px;
+  width: 50px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .logo img {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
-
 .logo:hover {
-    transform: rotate(-8deg) scale(1.1);
+  transform: rotate(-8deg) scale(1.1);
 }
 
 .header ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .header li {
-    display: inline-flex;
+  display: inline-flex;
 }
 
 .header ul li a {
-    text-decoration: none;
-    padding: 0.45rem 0.8rem;
-    margin: 0 0.4rem;
-    transition: 0.1s;
+  text-decoration: none;
+  padding: 0.45rem 0.8rem;
+  margin: 0 0.4rem;
+  transition: 0.1s;
 }
 
 .header ul li a:hover {
-    filter: brightness(90%);
+  filter: brightness(90%);
 }
-
-
 
 .active {
-    font-weight: 600;
-    color: #5865F2;
+  font-weight: 600;
+  color: #5865f2;
 }
 
-
-
 .login {
-    box-shadow: 0 0 15px 0 #5865F2;
-    text-decoration: none;
-    padding: 0.45rem 2.5rem;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #5865F2;
-    transition: 0.2s;
-
+  box-shadow: 0 0 15px 0 #5865f2;
+  text-decoration: none;
+  padding: 0.45rem 2.5rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #5865f2;
+  transition: 0.2s;
 }
 
 .login:hover {
-    background-color: #4e5bee;
+  background-color: #4e5bee;
 }
 
 .widthl {
-    width: inherit;
+  width: inherit;
 }
 
-
-
 @media only screen and (max-width: 740px) {
+  .header {
+    padding: 0;
+  }
 
-    .header {
-        padding: 0;
-    }
+  .header .items {
+    justify-content: center;
+  }
 
-    .header .items {
-        justify-content: center;
-    }
+  .logo {
+    display: none;
+  }
 
-    .logo {
-        display: none;
-    }
+  .login {
+    display: none;
+  }
 
-    .login {
-        display: none;
-    }
+  .header ul li a {
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.3rem 0.5rem;
+    margin: 0 0.2rem;
+    transition: 0.1s;
+  }
 
-    .header ul li a {
-        font-size: 1rem;
-        text-decoration: none;
-        padding: 0.3rem 0.5rem;
-        margin: 0 0.2rem;
-        transition: 0.1s;
-    }
-
-    .header ul {
-        padding: 0;
-    }
+  .header ul {
+    padding: 0;
+  }
 }

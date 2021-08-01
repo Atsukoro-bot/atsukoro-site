@@ -1,151 +1,140 @@
 .flex {
-    display: flex;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
-    align-items: center;
-    height: 35rem;
-    box-shadow: 0 0 15px 0 #00000073;
-    border-radius: 18px;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  height: 35rem;
+  box-shadow: 0 0 15px 0 #00000073;
+  border-radius: 18px;
 }
 
-
 .cmd {
-    width: 25%;
-    height: 100%;
-    background-color: #15161D;
-    padding: 1.5rem 1.5rem 0;
-    border-radius: 18px 0 0 18px;
-    overflow-x: hidden;
+  width: 25%;
+  height: 100%;
+  background-color: #15161d;
+  padding: 1.5rem 1.5rem 0;
+  border-radius: 18px 0 0 18px;
+  overflow-x: hidden;
 }
 
 .cmd::-webkit-scrollbar {
-    width: 3px;
+  width: 3px;
 }
 
 .cmd::-webkit-scrollbar-track {
-    background: #15161D;
+  background: #15161d;
 }
 
 .cmd::-webkit-scrollbar-thumb {
-    background: #1c1e27;
-    border-radius: 50rem;
+  background: #1c1e27;
+  border-radius: 50rem;
 }
-
 
 .cmdinfobox {
-    overflow: auto;
-    width: 75%;
-    height: 100%;
-    background-color: #181922;
-    border-radius: 0 18px 18px 0;
+  overflow: auto;
+  width: 75%;
+  height: 100%;
+  background-color: #181922;
+  border-radius: 0 18px 18px 0;
 }
-
-
 
 .cmdinfobox::-webkit-scrollbar {
-    width: 0;
-    margin-top: 10rem;
-    border-radius: 5px;
+  width: 0;
+  margin-top: 10rem;
+  border-radius: 5px;
 }
 
-
 .cmdbutton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1C1E27;
-    border-radius: 11px;
-    padding: .8rem 0;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1.8rem;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c1e27;
+  border-radius: 11px;
+  padding: 0.8rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  cursor: pointer;
 }
 
 .cmdbuttonactive {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5865F2;
-    border-radius: 11px;
-    padding: .8rem 0;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1.8rem;
-    cursor: pointer;
-    box-shadow: 0 0 15px 0 #5865F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5865f2;
+  border-radius: 11px;
+  padding: 0.8rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+  cursor: pointer;
+  box-shadow: 0 0 15px 0 #5865f2;
 }
 
 .cmdinfo {
-    width: 100%;
-    height: 5.5rem;
-    padding: .8rem 1.5rem;
-    border-bottom: 1px solid #1f212b;
-
+  width: 100%;
+  height: 5.5rem;
+  padding: 0.8rem 1.5rem;
+  border-bottom: 1px solid #1f212b;
 }
 
 .cmdinfo .title {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .title p {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 600;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .title .alias {
-    background: #15161E;
-    padding: 3px;
-    border-radius: 5px;
-    margin-left: .8rem;
-    font-family: "Courier New";
-    color: #5663f3;
-
+  background: #15161e;
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 0.8rem;
+  font-family: "Courier New";
+  color: #5663f3;
 }
 
-
 .cmdinfo .description {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 1600px) {
+  .cmdbutton {
+    font-size: 1.3rem;
+  }
 
-    .cmdbutton {
-        font-size: 1.3rem;
-    }
-
-    .cmdbuttonactive {
-        font-size: 1.3rem;
-    }
-
+  .cmdbuttonactive {
+    font-size: 1.3rem;
+  }
 }
 
-
 @media only screen and (max-width: 1300px) {
-    .flex {
-        flex-direction: column;
-    }
+  .flex {
+    flex-direction: column;
+  }
 
-    .cmd {
-        width: 100%;
-        height: 40%;
-        border-radius: 18px 18px 0 0;
-    }
+  .cmd {
+    width: 100%;
+    height: 40%;
+    border-radius: 18px 18px 0 0;
+  }
 
-    .cmdinfobox {
-        width: 100%;
-        height: 60%;
-        border-radius: 0 0 18px 18px;
-    }
+  .cmdinfobox {
+    width: 100%;
+    height: 60%;
+    border-radius: 0 0 18px 18px;
+  }
 }
 
 @media only screen and (max-width: 740px) {
-    .flex {
-        width: 95%;
-        height: 40rem;
-    }
+  .flex {
+    width: 95%;
+    height: 40rem;
+  }
 }

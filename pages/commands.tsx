@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import styles from '../styles/Commands.module.css'
+import styles from "../styles/Commands.module.css";
 
-import Meta from '../components/Meta/Meta'
-import { GetStaticProps } from 'next';
+import Meta from "../components/Meta/Meta";
+import { GetStaticProps } from "next";
 
-import { DisplayCategory } from "../modules/commands/DisplayCategory"
-import { DisplayCategoryInfo } from "../modules/commands/DisplayCategoryInfo"
+import { DisplayCategory } from "../modules/commands/DisplayCategory";
+import { DisplayCategoryInfo } from "../modules/commands/DisplayCategoryInfo";
 
 interface CommandsState {
-  data: string
+  data: string;
 }
 
 const CommandsPage = ({ data }) => {
@@ -19,39 +19,39 @@ const CommandsPage = ({ data }) => {
     <div className={styles.container}>
       <Meta title={"Atsukoro Commands"} />
       <div className={styles.flex}>
-        <DisplayCategory categoryName={categoryName} data={data} setCategoryName={setCategoryName} />
+        <DisplayCategory
+          categoryName={categoryName}
+          data={data}
+          setCategoryName={setCategoryName}
+        />
         <DisplayCategoryInfo categoryName={categoryName} data={data} />
       </div>
-
     </div>
-  )
-}
-
+  );
+};
 
 export const getStaticProps: GetStaticProps = async (context) => {
-
   const res = await fetch(`https://atsukoro.herokuapp.com/commands`);
-  const coms = await res.json()
+  const coms = await res.json();
 
   var data: object = {};
   coms.forEach(function (item: any) {
-    var category = data[item.category] = data[item.category] || {};
+    var category = (data[item.category] = data[item.category] || {});
     category[item.name] = data[item.name] || { description: item.description };
   });
-
 
   if (!data) {
     return {
       redirect: {
-        destination: '/',
+        destination: "/",
         permanent: false,
       },
-    }
+    };
   }
 
   return {
-    props: { data }
-  }
-}
+    props: { data },
+  };
+};
 
-export default CommandsPage
+export default CommandsPage;
