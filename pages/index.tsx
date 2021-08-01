@@ -30,7 +30,7 @@ const Index = ({ }) => {
           <h1>Atsukoro</h1>
           <h2 data-aos-delay="20" data-aos="fade-right">Anime based discord bot.</h2>
           <div data-aos-delay="100" data-aos="fade-right" className={styles.buttons}>
-            <Link href={"https://discord.com"} passHref>
+            <Link href={"https://discord.com/oauth2/authorize?client_id=806179206785794098&permissions=139589963072&scope=bot"} passHref>
               <div className={styles.invite}>Invite</div>
             </Link>
             <Link href={"https://github.com/Atsukoro-bot"} passHref>
