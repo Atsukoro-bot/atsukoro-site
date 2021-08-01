@@ -11,7 +11,6 @@ import { useEffect } from 'react'
 import Meta from '../components/Meta/Meta'
 
 import {FeaturePreview} from "../modules/index/FeaturePreview"
-interface Props {}
 
 const Index = ({}) => {
   useEffect(() => {

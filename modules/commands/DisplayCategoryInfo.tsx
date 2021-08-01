@@ -1,9 +1,9 @@
+
 import styles from "../../styles/Commands.module.css"
 
 import { CommandProps } from "./DisplayCategory";
 
 export const DisplayCategoryInfo: React.FC<CommandProps> = ({data, categoryName}) => {  
-
     const renderList = () => {
       return Object.keys(data[categoryName]).map((c) => (
         <div className={styles.cmdinfo} key={c}>

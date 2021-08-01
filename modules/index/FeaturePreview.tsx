@@ -9,15 +9,18 @@ import preview1 from "../../public/images/preview1.png"
 interface Props {}
 
 export const FeaturePreview: React.FC<Props> = () => {
-    const [mobile, setMobile] = useState<boolean>(false)
+    const [width, setWidth] = useState<number>(1920)
+
+    const handleResize = () => {
+      setWidth(window.innerWidth)
+    }
 
     useEffect(() => {
-        var maxWidth: number = 740;
-        if(window.innerWidth < maxWidth) return setMobile(true)
+        window.addEventListener("resize", handleResize)
     }, [])
 
     const updateImage = () => {
-        if(!mobile) return(
+        if(width > 740) return(
             <div data-aos="fade-up-left" className={styles.info}>
                 <div className={styles.dcs_l}>
                     <h1>Cool commands</h1>

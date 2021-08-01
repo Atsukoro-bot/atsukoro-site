@@ -189,8 +189,16 @@
 }
 
 
-@media only screen and (max-width: 1500px){
-
+@media only screen and (max-width: 1100px){
+  .container {
+    width: 90%;
+  }
+  .info .dcs{
+    padding-left: 5rem;  
+  }
+  .info .dcs_l{
+    padding-right: 5rem;
+  }
 }
 
 @media only screen and (max-width: 950px){
