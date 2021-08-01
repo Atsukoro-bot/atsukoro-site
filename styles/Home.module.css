@@ -212,11 +212,8 @@
   .head h2 {
     color: white;
     font-size: 1.4em;
-    position: absolute;
+    position: inherit;
     text-align: center;
-    left: 50%;
-    transform: translate(-50%, 0);
-    top: 31%;
     width: 100%;
     overflow: hidden;
     font-weight: 500;
