@@ -28,7 +28,7 @@ export const FeaturePreview: React.FC<Props> = () => {
             </h2>
           </div>
           <div className={styles.image}>
-            <Image src={preview1} alt="preview2" />
+            <Image src={preview1} alt="preview2" placeholder="blur" />
           </div>
         </div>
       );
@@ -36,7 +36,7 @@ export const FeaturePreview: React.FC<Props> = () => {
       return (
         <div data-aos="fade-up-left" className={styles.info}>
           <div className={styles.image}>
-            <Image src={preview1} alt="preview2" />
+            <Image src={preview1} alt="preview2" placeholder="blur" />
           </div>
           <div className={styles.dcs_l}>
             <h1>Play music quiz</h1>
@@ -53,7 +53,7 @@ export const FeaturePreview: React.FC<Props> = () => {
     <div className={styles.container}>
       <div data-aos="fade-up-right" className={styles.info}>
         <div className={styles.image}>
-          <Image src={preview1} alt="preview1" />
+          <Image src={preview1} alt="preview1" placeholder="blur" />
         </div>
         <div className={styles.dcs}>
           <h1>Search from Anilist</h1>
@@ -63,7 +63,7 @@ export const FeaturePreview: React.FC<Props> = () => {
       {updateImage()}
       <div data-aos="fade-up-right" className={styles.info}>
         <div className={styles.image}>
-          <Image src={preview1} alt="preview3" />
+          <Image src={preview1} alt="preview3" placeholder="blur" />
         </div>
         <div className={styles.dcs}>
           <h1>Roleplay Commands</h1>
